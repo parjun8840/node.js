@@ -34,3 +34,6 @@ app.get("*", function(request, response) {
   response.end("<h4>404! File Missing</h4>");
   console.log("404") ;
 });
+
+http.createServer(app).listen(4200);
+console.log("listening  on 4200...") ;
